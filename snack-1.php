@@ -6,10 +6,18 @@
 
 <?php
 
-//Andiamo a realizzare un array delle partite di basket
+// Andiamo a realizzare un array delle partite di basket
 
 $partite_di_basket = [
-    ["ospite" => "Roma", "casa" => "Firenze", "punti_ospite" => 87, "punti_casa" => 90]
-]
+    ["ospite" => "Roma", "casa" => "Firenze", "punti_ospite" => 87, "punti_casa" => 90],
+];
 
-    ?>
+// verifichiamo se funziona nel stampare la prima partita
+
+foreach ($partite_di_basket as $partita) {
+    // qua useremo echo per scrivere la partita
+
+    echo "{$partita['ospite']} - {$partita['casa']} | {$partita['punti_casa']}-{$partita['punti_ospite']}";
+}
+?>
+
