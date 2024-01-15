@@ -15,15 +15,17 @@ che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocci
         <label for="name" class="for">Nome:</label>
         <input type="text" name="name" id="name" required>
 
-        <!-- di conseguenza facciamo lo stesso per email e età !-->$_COOKIE
+        <!-- di conseguenza facciamo lo stesso per email e età !-->
         <label for="mail" class="for">Email:</label>
         <input type="text" name="mail" id="mail" required>
 
         <label for="age" class="for">Età:</label>
         <input type="text" name="age" id="age" required>
 
-        <!-- qua verrà inserito input per verificare l'accesso!-->$_COOKIE
-        
+        <!-- qua verrà inserito input per verificare l'accesso!-->
+
+    <input type="submit" value="Verifica Accesso">
+
 
     </form>
 </body>
