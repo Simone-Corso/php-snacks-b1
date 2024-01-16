@@ -19,7 +19,12 @@ if (isset($_GET['a']) && isset($_GET['b'])) {
 
     //Creo un modo per stampare i dati
 
-    echo ""
+    echo "Il valore di a è : $a ";
+    echo "Il valore di a è : $b ";
+    echo "La media è : $media";
+    
+
+
 }
 
 ?>
