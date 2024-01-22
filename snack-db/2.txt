@@ -1,0 +1,3 @@
+SELECT AVG (`VOTE`)
+FROM `exame_student`
+WHERE `VOTE`
