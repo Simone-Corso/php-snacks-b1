@@ -1,3 +1,5 @@
-SELECT *
-FROM `teachers`
-WHERE `name` LIKE '%s%' AND `office_address` > 96;
+SELECT AVG (`VOTE`), `exame_id`
+FROM `exame_student`
+GROUP BY `exame_id`
+HAVING AVG (`VOTE`) > 28
+order by `AVG` ((``VOTE``)) ASC
