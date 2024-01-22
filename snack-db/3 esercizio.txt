@@ -1,0 +1,3 @@
+SELECT *
+FROM `teachers`
+WHERE `name` LIKE '%s%' AND `office_address` > 96;
