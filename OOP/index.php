@@ -10,6 +10,15 @@ class Pokemon {
     public $level;
     public $point_life;
     public $experience;
+
+public function __costruct($name, $type , $level , $point_life , $experience)
+                    $this-> name = $name;
+                    $this-> type = $type;
+                    $this-> level = $level;
+                    $this-> point_life = $point_life;
+                    $this-> experience = $experience;
+                    
+
 }
 ?>
 
