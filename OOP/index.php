@@ -20,6 +20,20 @@ public function __costruct($name, $type , $level , $point_life , $experience)
                     
 
 }
+
+//inserisco un altr metodo per il nome
+
+public function getNome() {
+    return $this->name;
+}
+
+//metto un altro metodo dove indicherò lo stato della salute di pokemon
+
+public function setPuntiSalute($quantita) {
+        if ($quantita > 0) {
+            $this-> point_life = $quantita;
+        }
+}
 ?>
 
 <!DOCTYPE html>
