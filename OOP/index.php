@@ -40,6 +40,11 @@ public function setPuntiSalute($quantita) {
 
 $pikachu = new Pokemon ("Pikachu", "Elettrico", 8,30,80)
 
+//scriverò con echo quello le caratteristiche
+
+echo "<h1>Pokemon<H1>"
+echo "name:" . $pikachu->getNome() 
+
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +55,8 @@ $pikachu = new Pokemon ("Pikachu", "Elettrico", 8,30,80)
     <title>OOP</title>
 </head>
 <body>
-    
+    <main>
+        <h1>Pokemon</h1>
+    </main>
 </body>
 </html>
