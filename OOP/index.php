@@ -34,6 +34,12 @@ public function setPuntiSalute($quantita) {
             $this-> point_life = $quantita;
         }
 }
+
+
+//creo un esempio di un pokemon 
+
+$pikachu = new Pokemon ("Pikachu", "Elettrico", 8,30,80)
+
 ?>
 
 <!DOCTYPE html>
