@@ -2,6 +2,17 @@
 Microbonus: creo un'altra classe che aggiungo al pokemon per composizione che configuri il tipo di pokemon (aria, terra, ecc.)//
 
 
+
+<?php
+class Pokemon {
+    public $name;
+    public $type;
+    public $level;
+    public $point_life;
+    public $experience;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
