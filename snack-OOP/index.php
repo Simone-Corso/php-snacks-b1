@@ -19,5 +19,18 @@
          * qua invece inseriamo la funxione construct
          */
 
-         public function __construct($nome, $cognome, $età)
+         public function __construct($nome, $cognome, $età){
+            $this->nome = $name;
+            $this->cognome = $cognome;
+            $this->età = $età;
+
+         }
+
+         /**
+          * poi inserisco il Getetà
+          */
+
+          public function getEtà() {
+            return $this->età;
+          }
     }
