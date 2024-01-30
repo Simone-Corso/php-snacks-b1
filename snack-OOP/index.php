@@ -36,7 +36,7 @@
 
           public function setEtà($nuovaEtà) {
             if (!is_int($nuovaEtà)) {
-                throw new InvalidArgumentException("l'ètà dovrà essere un numero intero");
+                throw new Exception("l'ètà dovrà essere un numero intero");
             }
     
             $this->età = $nuovaEtà;
@@ -53,7 +53,7 @@ try {
 
    //inserisco in caso l'età non è valida
     $persona->setEtà("non è un numero valido");
-} catch (InvalidArgumentException $e) {
+} catch (Exception $e) {
     echo "c'è un Errore: " . $e->getMessage();
 }
 
