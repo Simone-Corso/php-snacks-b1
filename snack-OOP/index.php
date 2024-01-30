@@ -34,11 +34,27 @@
             return $this->età;
           }
 
-          public function setAge($newAge) {
-            if (!is_int($newAge)) {
+          public function setEtà($nuovaEtà) {
+            if (!is_int($nuovaEtà)) {
                 throw new InvalidArgumentException("l'ètà dovrà essere un numero intero");
             }
     
-            $this->age = $newAge;
+            $this->età = $nuovaEtà;
     }
+}
+
+/**
+ * ho inserito il try con un massimo di 30
+ */
+try {
+    $persona = new Persona("Giacomo", "Infrarossi", 30);
+    echo $persona->getEtà();
+
+   //inserisco in caso l'età non è valida
+    $persona->setEtà("non è un numero valido");
+} catch (InvalidArgumentException $e) {
+    echo "c'è un Errore: " . $e->getMessage();
+}
+
+?>
 
