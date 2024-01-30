@@ -33,4 +33,12 @@
           public function getEtà() {
             return $this->età;
           }
+
+          public function setAge($newAge) {
+            if (!is_int($newAge)) {
+                throw new InvalidArgumentException("l'ètà dovrà essere un numero intero");
+            }
+    
+            $this->age = $newAge;
     }
+
