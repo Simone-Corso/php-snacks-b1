@@ -20,7 +20,7 @@
          */
 
          public function __construct($nome, $cognome, $età){
-            $this->nome = $name;
+            $this->nome = $nome;
             $this->cognome = $cognome;
             $this->età = $età;
 
@@ -45,6 +45,7 @@
 
 /**
  * ho inserito il try con un massimo di 30
+ * Seconda parte
  */
 try {
     $persona = new Persona("Giacomo", "Infrarossi", 30);
